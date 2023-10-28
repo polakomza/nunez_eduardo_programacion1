@@ -1,4 +1,4 @@
-'''Solicitar números al usuario hasta que ingrese el cero. Por cada uno, mostrar la suma de sus dígitos.'''
+import random
 #Sumar digitos de un numero ingresado.
 def sum_digit(number):
     summary=0
@@ -7,10 +7,6 @@ def sum_digit(number):
         number//=10
     summary += number
     return summary
-
-'''El juego debe mostrar el estado actual de la palabra oculta con guiones bajos (_) que
-representan las letras no adivinadas y las letras adivinadas deben mostrarse en su
-lugar correspondiente.'''
 
 # Guiones bajos y muestra de letras
 def choiced_word(word,phrase):
@@ -21,4 +17,3 @@ def choiced_word(word,phrase):
         else:
             characters += "_"
     return characters
-
