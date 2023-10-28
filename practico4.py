@@ -96,3 +96,75 @@ que sean bisiestos y múltiplos de 10.
 Nota: Para que un año sea bisiesto debe ser divisible por 4 y no debe ser divisible por 100,
 excepto que también sea divisible por 400.'''
 
+# leap_year = 0
+# # Bucle validando que el segundo año sea mayor al primero. El primero puede ser negativo (año A.C)
+# while leap_year == 0:
+#     first_year = int(input("Ingrese un año, Ejemplo: 1650\n--> "))
+#     second_year = int(input("Ingrese un año mayor al anterior, Ejemplo: 2023\n--> "))
+#     if first_year < 0 or second_year < first_year:
+#         print("Los años ingresados son incorrectos. Por favor ingrese numeros validos.")
+#         first_year = int(input("Ingrese nuevamente el primer año: "))
+#         second_year = int(input("Ingrese nuevamente el segundo año: "))
+
+# # Bucle que valida los años entre el primero ingresado y el segundo y cuenta los bisiestos
+#     for i in range(first_year, second_year + 1):
+#         if (i % 4 == 0 and i % 100 != 0) or (i % 400 == 0):
+#             leap_year += 1
+
+# print(f"Entre el año {first_year} y el año {second_year} hay {leap_year} años bisiestos.")
+
+'''5- Escribe un programa que imprima todos los números pares del 1 al 20 usando un bucle for.
+Utiliza la declaración continue para omitir los números impares.'''
+# number = 20
+# even = 0
+# for i in range(1, number +1):
+#     if i % 2 == 0:
+#         even += 1
+#     else:
+#         continue
+#     print(f"Numero par {i}")
+
+'''6.	Crea una lista de números y utiliza un bucle for para encontrar un número específico.
+Cuando encuentres el número, usa break para salir del bucle.'''
+
+# number_list = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+
+# number = int(input("Ingrese un numero del 1 al 20 para encontrarlo en la lista: "))
+
+# for i in number_list:
+#     print(f"Numero {i}")
+#     if i == number:
+#         print(f"Encontro su numero en la posicion {i}")
+#         break
+#     else:
+#         continue
+
+'''7.	Crea un programa que muestre un menú de opciones (por ejemplo, opciones 1, 2, 3).
+Utiliza un bucle while para permitir al usuario seleccionar una opción. Si el usuario ingresa "0",
+utiliza break para salir del bucle (Mostrar un mensaje por cada opción elegida).'''
+
+# menu = int(input("Seleccione entre la opcion '1' , '2' o '3'. Si desea salir ingrese '0' --> "))
+
+# while menu != 0:
+#     if menu < 0 or menu > 3:
+#         print("Esa opcion no esta en el menu.")
+#         menu = int(input("Seleccione entre la opcion '1' , '2' o '3'. Si desea salir ingrese '0' --> "))
+#     if menu == 1:
+#         print("----------------------------------")
+#         print("Usted eligio la opcion 1.")
+#         print("----------------------------------")
+#         menu = int(input("Seleccione entre la opcion '1' , '2' o '3'. Si desea salir ingrese '0' --> ")) 
+#     elif menu == 2:
+#         print("----------------------------------")
+#         print("Usted eligio la opcion 2.")
+#         print("----------------------------------")
+#         menu = int(input("Seleccione entre la opcion '1' , '2' o '3'. Si desea salir ingrese '0' --> "))
+#     elif menu == 3:
+#         print("----------------------------------")
+#         print("Usted eligio la opcion 3.")
+#         print("----------------------------------")
+#         menu = int(input("Seleccione entre la opcion '1' , '2' o '3'. Si desea salir ingrese '0' --> "))
+#     elif menu == 0:
+#         break
+
+# print("Muchas gracias. Adios")
