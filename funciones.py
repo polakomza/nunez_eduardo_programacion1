@@ -70,3 +70,36 @@ def max_min(numbers):
                 numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
     min_max = (numbers[0], numbers[-1])
     return min_max
+
+# Contar cuantos digitos tiene un numero de forma recursiva
+def count_digits(number):
+    # Caso base: si n es un solo dígito, retornar 1
+    if number < 10:
+        return 1
+    # Caso recursivo: llamar a la función con n/10
+    # para contar los dígitos del número sin el último dígito,
+    # y sumar 1 al resultado para contar el dígito actual.
+    else:
+        return 1 + count_digits(number // 10)
+
+# Saber si n es potencia de b de manera recursiva
+def potency(n, b):
+    if n < b:
+        return False
+    elif n == b:
+        return True
+    else:
+        return potency(n // b, b)
+
+# Saber si es par
+def even(n):
+    if n == 0:
+        return True  # El 0 se considera par
+    else:
+        return odd(n - 1)
+# Saber si es impar
+def odd(n):
+    if n == 0:
+        return False  # El 0 se considera par
+    else:
+        return even(n - 1)
