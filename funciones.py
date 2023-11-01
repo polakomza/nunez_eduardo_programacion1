@@ -22,7 +22,7 @@ def choiced_word(word,phrase):
 
 def validation(dni):
     is_valid = True
-    if len(dni) == 7 or len(dni) == 8:
+    if len(str(dni)) == 7 or len(str(dni)) == 8:
         is_valid = True
     else:
         is_valid = False
